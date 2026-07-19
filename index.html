@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossas Memórias ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="app">
+
+        <!-- Carta inicial -->
+        <section id="inicio" class="tela">
+
+            <div class="carta">
+
+                <div class="emoji">💌</div>
+
+                <h1>Oi, amor ❤️</h1>
+
+                <p>
+                    Como estamos longe um do outro...
+                    <br><br>
+                    Resolvi esconder algumas das nossas memórias.
+                    <br><br>
+                    Será que você consegue encontrar todas?
+                </p>
+
+                <button id="btnComecar">
+                    Encontrar Memórias ❤️
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- HUD -->
+        <div id="hud" class="hidden">
+
+            ❤️ <span id="contador">0</span>/7
+
+        </div>
+
+        <!-- Minigame -->
+        <section id="jogo" class="hidden">
+
+            <img id="fotoMemoria" src="" alt="Memória">
+
+        </section>
+
+        <!-- Tela de conclusão -->
+        <section id="finalJogo" class="tela hidden">
+
+            <div class="caixa">
+
+                <h2>❤️ Você encontrou todas ❤️</h2>
+
+                <p>
+                    Essas são apenas 7 das infinitas memórias
+                    que eu quero criar ao seu lado.
+                </p>
+
+                <button id="btnAlbum">
+                    Reviver nossas memórias
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Álbum -->
+        <section id="album" class="tela hidden">
+
+            <img id="fotoAlbum" src="">
+
+            <h2 id="titulo"></h2>
+
+            <p id="texto"></p>
+
+            <button id="proxima">
+
+                Próxima ❤️
+
+            </button>
+
+        </section>
+
+        <!-- Vídeo -->
+        <section id="videoSection" class="hidden">
+
+            <video id="videoFinal"
+                playsinline
+                controls>
+
+                <source src="video/final.mp4" type="video/mp4">
+
+            </video>
+
+        </section>
+
+        <!-- Carta Final -->
+        <section id="cartaFinal" class="tela hidden">
+
+            <div class="carta">
+
+                <h2>❤️</h2>
+
+                <p>
+
+                    Obrigado por ser essa mulher incrível 
+                    que me faz tão feliz❤️
+                    peço para que tranquilize seu coração,
+                    pois ainda serei o marido perfeito 
+                    em que você sempre sonhou.
+
+
+                    <br><br>
+
+                    Eu te amo, minha princesa ❤️
+
+                </p>
+
+                <button onclick="location.reload()">
+
+                    Jogar novamente
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
